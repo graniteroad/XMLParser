@@ -1,0 +1,23 @@
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLParserDesktop.exe
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLParserDesktop.pdb
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\MainWindow.baml
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\MainWindow.g.cs
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\App.g.cs
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop_MarkupCompile.cache
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.g.resources
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.Properties.Resources.resources
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.exe
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.pdb
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLReader.dll
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLReader.pdb
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\DisplayXMLTree.baml
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\DisplayXMLTree.g.cs
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLParserDesktop.exe.manifest
+C:\SourceControl\XMLParser\XMLParserDesktop\bin\Debug\XMLParserDesktop.application
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.exe.manifest
+C:\SourceControl\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.application
+C:\SourceControl\XML Parser\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.exe
+C:\SourceControl\XML Parser\XMLParser\XMLParserDesktop\obj\x86\Debug\XMLParserDesktop.pdb

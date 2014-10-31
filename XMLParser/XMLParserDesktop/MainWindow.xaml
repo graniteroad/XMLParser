@@ -1,0 +1,29 @@
+﻿<Window x:Class="XMLParserDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XML Parser Desktop" Height="350" Width="525">
+    <DockPanel Width="Auto" Height="Auto" LastChildFill="True">
+        <!--Bottom Status Bar area, declared before middle section, as I want it to fill entire
+            bottom of Window, which it wouldnt if there was a Left docked panel before it -->
+        <StackPanel Width="Auto" Height="31" Background="LightGray" Orientation="Horizontal" DockPanel.Dock="Bottom">
+            <Label Width="155" Height="23" Name="lblStatus" Content="" FontFamily="Arial" FontSize="10"/>
+            <ProgressBar Name="progressBar" Width="155" Height="23"></ProgressBar>
+        </StackPanel>
+    
+        <Grid Height="328" Width="554">
+            <Button Content="Browse" Height="23" HorizontalAlignment="Left" Margin="200,6,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="75" Click="btnBrowse_Click" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="16,6,0,0" Name="txtBoxFolder" VerticalAlignment="Top" Width="178" />
+            <DataGrid AutoGenerateColumns="False" Height="200" 
+                      HorizontalAlignment="Left" Margin="16,74,0,0" 
+                      Name="dgFiles" VerticalAlignment="Top" Width="473"
+                      AlternatingRowBackground="Coral"
+                      MouseDoubleClick="dgFiles_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="File Name" Binding="{Binding Path=FileName}" Width="100"/>
+                    <DataGridTextColumn Header="File Path" Binding="{Binding Path=FilePath}" Width="373"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Find" Height="23" HorizontalAlignment="Left" Margin="16,45,0,0" Name="btnFind" VerticalAlignment="Top" Width="75" Click="btnFind_Click" />
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="XMLParserDesktop.DisplayXMLTree"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DisplayXMLTree" Height="500" Width="750">
+    <Window.Resources>
+        <HierarchicalDataTemplate x:Key="NodeTemplate">
+            <HierarchicalDataTemplate.ItemsSource>
+                <Binding XPath="child::node()|attribute::*" />
+            </HierarchicalDataTemplate.ItemsSource>
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="icon" VerticalAlignment="Center" Margin="1,1,4,1"/>
+                <TextBlock x:Name="name" Text="" />
+                <TextBlock x:Name="inter" Text="" />
+                <TextBlock x:Name="value" Text="" />
+            </StackPanel>            
+            <HierarchicalDataTemplate.Triggers>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="Element">
+                    <Setter TargetName="icon" Property="Source" Value="icons/folder.png"></Setter>
+                    <Setter TargetName="name" Property="Text" Value="{Binding Path=Name}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="Text">
+                    <Setter TargetName="icon" Property="Source" Value="icons/allother.png"></Setter>
+                    <Setter TargetName="value" Property="Text" Value="{Binding Path=Value}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="Attribute">
+                    <Setter TargetName="icon" Property="Source" Value="icons/attribute.png"></Setter>
+                    <Setter TargetName="name" Property="Text" Value="{Binding Path=Name}"></Setter>
+                    <Setter TargetName="inter" Property="Text" Value=": "></Setter>
+                    <Setter TargetName="value" Property="Text" Value="{Binding Path=Value}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="CDATA">
+                    <Setter TargetName="icon" Property="Source" Value="icons/allother.png"></Setter>
+                    <Setter TargetName="value" Property="Text" Value="{Binding Path=Value}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="Comment">
+                    <Setter TargetName="icon" Property="Source" Value="icons/allother.png"></Setter>
+                    <Setter TargetName="value" Property="Text" Value="{Binding Path=Value}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=NodeType}" Value="ProcessingInstruction">
+                    <Setter TargetName="icon" Property="Source" Value="icons/allother.png"></Setter>
+                    <Setter TargetName="value" Property="Text" Value="{Binding Path=Value}"></Setter>
+                </DataTrigger>
+            </HierarchicalDataTemplate.Triggers>
+        </HierarchicalDataTemplate>
+        <XmlDataProvider x:Key="xmlDataProvider"></XmlDataProvider>
+    </Window.Resources>
+    <Grid>
+        <TreeView Height="422" HorizontalAlignment="Stretch" 
+                  Margin="12,12,12,0" Name="treeViewXML" 
+                  VerticalAlignment="Stretch" 
+                  VirtualizingStackPanel.IsVirtualizing="False"
+                  VirtualizingStackPanel.VirtualizationMode="Standard" 
+                  Background="AliceBlue"
+                  ItemsSource="{Binding Source={StaticResource xmlDataProvider}, XPath=*}"
+                  ItemTemplate= "{StaticResource NodeTemplate}"
+                  Loaded="treeViewXML_Loaded"/>
+    </Grid>
+</Window>
