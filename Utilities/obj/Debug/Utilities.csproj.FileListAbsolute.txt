@@ -1,5 +1,0 @@
-C:\SourceControl\Utilities\bin\Debug\Utilities.dll
-C:\SourceControl\Utilities\bin\Debug\Utilities.pdb
-C:\SourceControl\Utilities\obj\Debug\ResolveAssemblyReference.cache
-C:\SourceControl\Utilities\obj\Debug\Utilities.dll
-C:\SourceControl\Utilities\obj\Debug\Utilities.pdb
