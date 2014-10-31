@@ -1,5 +1,0 @@
-C:\SourceControl\XMLReader\bin\Debug\XMLReader.dll
-C:\SourceControl\XMLReader\bin\Debug\XMLReader.pdb
-C:\SourceControl\XMLReader\obj\Debug\ResolveAssemblyReference.cache
-C:\SourceControl\XMLReader\obj\Debug\XMLReader.dll
-C:\SourceControl\XMLReader\obj\Debug\XMLReader.pdb
